@@ -14,6 +14,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'slim-rails'
 gem 'html2slim'
 
+# webpacker
+gem 'webpacker', '~> 3.5'
+
 # ridgepole（マイグレーション）
 gem 'ridgepole'
 
