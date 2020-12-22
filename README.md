@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo app based on Instagram.
 
-Things you may want to cover:
+* Rails（5.2.4.4）
 
-* Ruby version
+* Ruby（2.5.7）
 
-* System dependencies
+* mysql2
 
-* Configuration
+* slim
 
-* Database creation
+* webpacker
 
-* Database initialization
+* ridgepole
 
-* How to run the test suite
+* Rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
