@@ -44,6 +44,7 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     ast (2.4.1)
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.5.1)
       msgpack (~> 1.0)
@@ -51,6 +52,14 @@ GEM
     byebug (11.1.3)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    devise (4.7.3)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+    devise-i18n (1.9.2)
+      devise (>= 4.7.1)
     diff-lcs (1.4.4)
     diffy (3.4.0)
     erubi (1.10.0)
@@ -63,6 +72,10 @@ GEM
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hirb (0.7.3)
+    hirb-unicode-steakknife (0.0.9)
+      hirb (~> 0.5)
+      unicode-display_width (~> 1.1)
     hpricot (0.8.6)
     html2slim (0.2.0)
       hpricot
@@ -91,6 +104,7 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    orm_adapter (0.5.0)
     parallel (1.20.1)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -130,6 +144,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.0.1)
+    responders (3.0.1)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
     rexml (3.2.4)
     ridgepole (0.8.12)
       activerecord (>= 5.0.1, < 6.1)
@@ -205,6 +222,8 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.7.0)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -225,7 +244,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
+  devise
+  devise-i18n
   factory_bot_rails
+  hirb
+  hirb-unicode-steakknife
   html2slim
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)

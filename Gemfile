@@ -29,8 +29,18 @@ gem 'factory_bot_rails'
 # rubocop
 gem 'rubocop-performance'
 
+# bootstrap
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# ログイン
+gem 'devise'
+gem 'devise-i18n'
+
+
+# コンソール
+gem 'hirb'
+gem 'hirb-unicode-steakknife'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
