@@ -9,7 +9,7 @@ head
   = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
 body
-  = render 'partial/navbar'
+  = render 'partial/navbar' if current_user
 
   - if flash[:notice]
     .alert.alert-info
