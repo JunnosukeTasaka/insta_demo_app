@@ -4,6 +4,7 @@ create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=ut
   ## Database authenticatable
   t.string :name,              null: false, default: ""
   t.string :email,              null: false, default: ""
+  t.string :profile_photo
   t.string :encrypted_password, null: false, default: ""
   
   ## Recoverable
