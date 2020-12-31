@@ -6,8 +6,10 @@
       .row
         h1
           = @user.name
-        = link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark common-btn edit-profile-btn"
-        button.setting[type="button" data-toggle="modal" data-target="#exampleModal"]
+        - if @user.name == current_user
+          = link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark common-btn edit-profile-btn"
+          button.setting[type="button" data-toggle="modal" data-target="#exampleModal"]
+
         #exampleModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"]
           .modal-dialog[role="document"]
             .modal-content
