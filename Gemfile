@@ -37,6 +37,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'devise-i18n'
 
+# 画像アップロード
+gem 'carrierwave', '~> 2.0'
 
 # コンソール
 gem 'hirb'
