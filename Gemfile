@@ -40,6 +40,9 @@ gem 'devise-i18n'
 # 画像アップロード
 gem 'carrierwave', '~> 2.0'
 
+# 画像リサイズ
+gem "mini_magick"
+
 # コンソール
 gem 'hirb'
 gem 'hirb-unicode-steakknife'
