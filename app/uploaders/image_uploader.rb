@@ -7,8 +7,8 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  version :medium do do
-    process resize_to_fit: [1080, 1080]
+  version :medium do
+    process resize_to_fill: [1080, 1080]
   end
 
   def extension_whitelist
