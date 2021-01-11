@@ -13,14 +13,16 @@
         .row.parts
           = link_to "", "#", class: "love"
           = link_to "", "#", class: "comment"
-        strong
-          | 「いいね！」10件
-        span
+        div
           strong
-            = post.user.name
-        span
-          = post.caption
-        = link_to time_ago_in_words(post.created_at).upcase + "前", "#", class: "post-time no-text-decoration"
+            | 「いいね！」10件
+        div
+          span
+            strong
+              = post.user.name
+          span
+            = post.caption
+          = link_to time_ago_in_words(post.created_at).upcase + "前", "#", class: "post-time no-text-decoration"
         hr
           .row.parts
             form.w-100[action="#"]
